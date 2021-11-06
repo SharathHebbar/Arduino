@@ -1,8 +1,10 @@
 
 #include <SoftwareSerial.h>  
 
-#define B_RX    4                // Define software serial RX pin for bluetooth
-#define B_TX    3                // Define software serial TX pin for bluetooth
+#define B_RX    4                // Define software serial RX pin for bluetooth 
+//Connect Bluetooth TX tp Arduino pin number 4
+#define B_TX    3                // Define software serial TX pin for bluetooth RX
+//Connect Bluetooth RX tp Arduino pin number 3
 
 SoftwareSerial BTSerial(B_RX, B_TX);    // Configure BluetoothSerial library
 
